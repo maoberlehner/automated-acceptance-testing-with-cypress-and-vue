@@ -1,6 +1,6 @@
 # automated-acceptance-testing-with-cypress-and-vue
 
-This is an example project for the following article: [Automated Acceptance Testing with Cypress and Vue.js](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup)
+This is an example project for the following article: [Automated Acceptance Testing with Cypress and Vue.js](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-network-stubs-and-timers)
 
 ## Build Setup
 
