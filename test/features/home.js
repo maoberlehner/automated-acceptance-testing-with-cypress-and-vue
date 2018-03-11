@@ -18,4 +18,15 @@ describe(`Home`, () => {
 
     cy.get(`[data-qa="header"] [data-qa="username"]`).should(`contain`, `JohnDoe`);
   });
+
+  it(`Should display a logout warning after 270 seconds of inactivity.`, () => {
+    const waitSeconds = 270;
+    const waitMilliseconds = waitSeconds * 1000;
+    const buffer = 1000;
+
+    cy.clock();
+    cy.visit(`/`);
+    cy.tick(waitMilliseconds + buffer);
+    cy.get(`[data-qa="logout warning"]`).should(`be.visible`);
+  });
 });
